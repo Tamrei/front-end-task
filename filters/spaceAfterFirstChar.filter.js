@@ -5,7 +5,6 @@
         .module('spaceAfterFirstChar.filter', [])
         .filter('spaceAfterFirstChar', spaceAfterFirstChar);
 
-
     /**
      * Adds space after first character
      *
