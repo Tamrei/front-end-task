@@ -1,0 +1,44 @@
+{
+  "companies": [
+    {
+      "logoUrl": "http://www.finn.no/penger/torg/cyberstrap/images/colorLogos/santander_logo.png",
+      "customerSatisfaction": 75,
+      "customerBenefits": [
+        "SAS Bonus points",
+        "Get discounts on 120,000 hotels"
+      ],
+      "orderUrl": "https://www.santanderconsumer.no",
+      "contactUrl": "https://www.santanderconsumer.no/om-santander/kontakt-oss",
+      "price" : 2110
+    },
+    {
+      "logoUrl": "http://www.finn.no/penger/torg/cyberstrap/images/colorLogos/sparebank1_finans_logo.png",
+      "customerSatisfaction": 89,
+      "customerBenefits": [
+        "SAS Bonus points"
+      ],
+      "orderUrl": "http://sb1-finans.no",
+      "contactUrl": "http://sb1-finans.no/?refnr=BFFT15X244YDA4",
+      "price" : 3110
+    },
+    {
+      "logoUrl": "http://www.finn.no/penger/torg/cyberstrap/images/colorLogos/sparebank1_finans_logo.png",
+      "customerSatisfaction": 89,
+      "customerBenefits": [
+        "SAS Bonus points"
+      ],
+      "orderUrl": "http://sb1-finans.no",
+      "contactUrl": "http://sb1-finans.no/?refnr=BFFT15X244YDA4"
+    },
+    {
+      "logoUrl": "http://www.finn.no/penger/torg/cyberstrap/images/colorLogos/skandiabanken_logo.png",
+      "customerSatisfaction": 100,
+      "customerBenefits": [
+        "Get discounts on 150,000 hotels"
+      ],
+      "orderUrl": "https://skandiabanken.no",
+      "contactUrl": "https://skandiabanken.no/om-oss/kontakt/",
+      "price" : 4110
+    }
+  ]
+}

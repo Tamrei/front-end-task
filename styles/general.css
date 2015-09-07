@@ -1,0 +1,27 @@
+body {
+    background-color: #e1eaf2;
+    padding-top: 80px;
+}
+
+.panel {
+    /*border-color: #222222;*/
+    /*-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);*/
+    border-radius: 2px;
+}
+
+.panel {
+    border: 1px lightgray solid;
+}
+
+li {
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2NkIBIwEqmOAa5QfdKH/9g03cwTAKsZngoJBRPR4QgAcgYYCxEjGdYAAAAASUVORK5CYII=");
+}
+
+ul {
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJklEQVQYV2NkIBIwEqmOAa5QvHXhf2yaXlbHg9UMT4WEgonocAQANUYYCxZFtcgAAAAASUVORK5CYII=");
+    /*
+    http://www.patternify.com/
+    */
+}

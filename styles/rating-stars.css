@@ -1,0 +1,19 @@
+.raterater-bg-layer {
+    color: #ffffff;
+}
+
+.raterater-hover-layer {
+    color: #ffffff;
+}
+
+.raterater-hover-layer.rated {
+    color: #ffffff;
+}
+
+.raterater-rating-layer {
+    color: #2792f0;
+}
+
+.raterater-outline-layer {
+    color: #2792f0;
+}

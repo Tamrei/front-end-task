@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css" media="screen"/>
+
+    <link href="resources/css/font-awesome.css" rel="stylesheet">
+    <link href="resources/css/raterater.css" rel="stylesheet">
+
+    <link href="styles/buttons.css" rel="stylesheet">
+    <link href="styles/general.css" rel="stylesheet">
+    <link href="styles/rating-stars.css" rel="stylesheet">
+
+    <script src="resources/js/bootstrap.3.0.0.min.js"></script>
+    <script src="resources/js/angular.min.js"></script>
+    <script src="resources/js/jquery.1.4.3.min.js"></script>
+
+    <script src="resources/js/raterater.jquery.js" type="text/javascript"></script>
+
+    <script src="services/company.service.js"></script>
+    <script src="controllers/company.controller.js"></script>
+    <script src="directive/company.directive.js"></script>
+    <script src="filters/spaceAfterFirstChar.filter.js"></script>
+
+    <script src="app.js"></script>
+
+    <style>
+        .row-centered {
+            text-align: center;
+        }
+
+        .col-centered {
+            display: inline-block;
+            float: none;
+            text-align: left;
+            margin-right: -4px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="panel">
+
+        <div class="panel-body" id="headerPanelBody">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4">
+                    <h1 style="margin-top: 6px;">Power</h1>
+
+                    <p>Very very very very very very very very very very very very very
+                        very very long text </p>
+                </div>
+
+                <div class="col-md-4 col-sm-5 col-lg-3">
+                    <img src="http://c8.alamy.com/comp/CFHGGY/snow-covered-house-in-norwegian-village-of-laukslett-troms-north-norway-CFHGGY.jpg"
+                         width="267" height="180">
+                </div>
+
+                <div class="col-md-4 col-sm-3 col-lg-5">
+                    <h2 style="margin-top: 0;"> Roros cabin in timber-Synn... </h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div ng-app="myApp" ng-controller="companiesController" class="" style="margin-left: 0">
+
+        <div class="row">
+
+            <div class="col-md-4" style="border-top: 1px #ccc solid">
+            </div>
+
+            <div class="col-md-8">
+
+                <div class="panel" ng-repeat="company in companies" on-last-repeat style="margin-bottom: 0;">
+
+                    <div class="panel-body">
+
+                        <div class="row">
+
+                            <div class="col-md-7 col-sm-7 col-xs-12" style="padding-top: 5px; padding-left: 20px;">
+
+                                <img src="{{ company.logoUrl }}" class="img-rounded" id="logoImg" width="25%"
+                                     height="25%">
+
+                                <ul style="padding-left: 20px; border-top-width: 15px; padding-top: 20px; margin-bottom: 0px;">
+                                    <div ng-repeat="benefit in company.customerBenefits">
+                                        <li> {{ benefit }}</li>
+                                    </div>
+                                </ul>
+
+                                <div style="color: #2792f0; padding-top: 10px;"> Customer satisfaction</div>
+
+                                <div class="ratebox" data-id="1"
+                                     data-rating="{{ (company.customerSatisfaction / 20) }}"></div>
+
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 col-xs-0">
+
+                                <div class="" style="padding-top: 4px">
+                                    <div class="row row-centered">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-col-centered"
+                                             style="padding-left: 21%; padding-right: 0">
+                                            <div class=""><h5> Sport price </h5></div>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-centered"
+                                             style="padding-right: 23%; padding-left: 0">
+                                            <div ng-if="company.price">
+                                                <div style="font-size: 22px;"> {{ company.price | spaceAfterFirstChar }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="padding-top: 13px;">
+                                    <a class="btn btn-primary btn-block" href="{{company.orderUrl}}">Order</a>
+                                    <a class="btn btn-default btn-block" href="{{company.contactUrl}}">Get
+                                        contacted</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
