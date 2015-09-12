@@ -19,16 +19,6 @@
         return service;
 
         function getAllCompanies() {
-
-            /*var companies = {};
-
-             $http.get("data.json")
-             .success(function (data) {
-             companies = data.companies;
-             alert("+++++++++++++");
-             });
-             return companies;
-             */
             return $http.get("data/data.json");
         }
 
